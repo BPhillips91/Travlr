@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+    >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/hotel_view_image"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/hotel_view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Hotel"
+        android:layout_below="@+id/hotel_view_image"/>
+
+    <TextView
+        android:id="@+id/hotel_view_placesNearby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Address 344"
+        android:layout_below="@+id/hotel_view_name"/>
+
+
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>
